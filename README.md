@@ -173,9 +173,15 @@ The XGBoost models were run on the pharmaceutical stocks to generate the followi
        XGBoost with 2 features: 0.423
 
 ## 7. Conclusion
-When comparing performance of various machine learning models, the XGBoost model performance is better than LSTM and Arima.
+When comparing performance of various machine learning models, the XGBoost model performance is better than LSTM and Arima.  We feel that we do not have significant evidence to conclude that Trump's tweets impacts the move of stock prices of GSK, Pfizer, AstaZeneca. 
 
-We feel that we do not have significant evidence to conclude that Trump's tweets impacts stock prices of GSK, Pfizer, AstaZeneca.
+With the limited time available to complete the project, there were some constraints that we had to further investigate and complete our findings:
+* Perform additional work to more accurately compare numerical results between different models
+* Increase the time frame of the dataset and run all models
+* Increase the scope of the twitter feeds to include all stock markets and use generic stocks e.g S&P500 
+* Further investigation to understand differences in output of actual values displayed between various models
+* Add and evaluate model performance with more features
+* Use of different techniques for sentiment analysis
 
 ## 8. Technical specifications
 
