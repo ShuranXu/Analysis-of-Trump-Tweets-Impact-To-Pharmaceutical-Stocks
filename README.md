@@ -77,7 +77,9 @@ The main goal of these notebooks was to create a CSV file with Trump's sentiment
 Overall the POTUS does not seem to be doing to great. Please view the machine learning notebooks for further analysis of the impact of Pandemic Tweets on companies stock prices who are developing a vaccine.
 
 ## 4. Time Series Forecasting
+
 In the "Time_Series_ARIMA_2020" notebook, historical stock prices, volume data was extracted from YahooFinance API for three top pharmaceutical companies namely GSK, Pfizer and AstraZeneca from 2018 to Sep 2020. Time series modelling ARIMA was used to determine if past values can predict the future stock prices for these companies.
+
 We created time series models and forecasted the movement of the stock prices as outlined below:
 1. Decomposition using a Hodrick-Prescott filter (decomposed the settle price into trend and noise).
 2. Selected variable based on stationarity (adjusted closing price versus percent change in adjusted closing price) 
@@ -86,6 +88,7 @@ We created time series models and forecasted the movement of the stock prices as
 4. Derived the forecasted values for next 58 days i.e. for the period 10 July 2020 to 30 Sep 2020, using the forecasted values from the model
 5. Compared the actual versus forecasted values from July 10 2020 to 30 Sep 2020
 6. Calculated the average of absolute difference in forecasted versus actual stock prices 
+
 Time series analysis and modelling helped answer the following questions:
 1. Based on the time series analysis, it was determined that the model is good in predicting stock prices for shorter window(1-2 weeks) and then it fails. We built a supplementary ARIMA model "Time_Series_Supplmentary_Model" with longer historical data (Jan 2018 to June 2020) to rule out the lesser data points issue. Here are the results of comparisons:
 ![GSK Actual Versus Forecasted](Images/TS_GSK_Actual_Forecasted.png) 
@@ -113,7 +116,7 @@ The last phase was to create a LSTM model with 2 features, daily returns and com
 
 ### *LSTM Summary of Findings*
    * LSTM performance was measured by running a model with  daily returns where returns was used as both feature and target vs performance of another LSTM model where returns and sentiment score was used as feature: </br>
-      * AZN LSTM model for 1 feature (returns) vs 2 features (returns and sentiment score):
+      * AZN LSTM model for 1 feature (returns) vs 2 features (returns and sentiment score): </br>
       ![LSTM - Daily returns](Images/LSTMmodel_AZN_stock_returns.png) </br>
       ![LSTM - Daily returns and sentiment score](Images/AZN_LSTM_Using_2_Features.png) </br> 
 
