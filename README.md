@@ -95,7 +95,7 @@ Time series analysis and modelling helped answer the following questions:
 ![Pfizer Actual Versus Forecasted](Images/TS_PFE_Actual_Forecasted.png)
 ![AstraZeneca Actual Versus Forecasted](Images/TS_AZN_Actual_Forecasted.png)
 2. Based on the model evaluation as outlined in the table below, we do not feel confident in using these models for trading </br>
-![Model Result Summary](Images/TS_Results_Summary.png)
+![Model Result Summary](Images/TS_Result.png)
 
 ### *Exploratory Data Analysis*
 Overall trend was observed for the stock prices and there was drop in stock prices across pharmas due to COVID-19 in April 2020. </br>
